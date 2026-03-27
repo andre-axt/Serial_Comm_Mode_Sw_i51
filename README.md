@@ -1,24 +1,47 @@
-Overview
+# 🔄 8051 Bidirectional UART Communication
 
-    This project implements bidirectional serial communication between two 8051 microcontrollers with a select mode (serial mode) feature. The system allows two 8051 MCUs to communicate via UART, with mode selection to control the direction or format of communication. The project is written in Assembly (ASM) and simulated using SimulIDE.
+##  Overview
 
+This project implements **bidirectional serial communication** between two 8051 microcontrollers. The system features a custom **Select Mode** (Serial Mode) that allows the user to control the direction and format of the UART communication.
 
-Circuit (SimlulIDE)
+Key highlights:
+*   **Real-time Interaction:** Full-duplex simulation between two MCUs.
+*   **Mode Selection:** Integrated logic to switch communication states via hardware triggers.
 
-<img width="1464" height="695" alt="Screenshot From 2026-03-27 17-53-57" src="https://github.com/user-attachments/assets/a64b21cf-cd18-4342-ab35-3efd759065ee" />
+---
 
-
-Hardware Components (Per MCU)
-
-    Microcontroller	8051 (AT89S52)
-    Crystal Oscillator	11.0592 MHz
-    Resistors	10kΩ 
-    Switches
-    Leds (optional)
-    Power Supply	5V
+##  Hardware Components (Per MCU)
 
 
-References
+| Component | Specification |
+| :--- | :--- |
+| **Microcontroller** | 8051 (AT89S52) |
+| **Crystal Oscillator** | 11.0592 MHz |
+| **Resistors** | 10kΩ |
+| **Input** | Push Buttons / Switches |
+| **Output** | LEDs (optional status indicators) |
+| **Power Supply** | 5V DC |
 
-    The 8051 Microcontroller - Kenneth J. Ayala
-    Microcontrolador 8051 Detalhado - Denys E. C. Nicolosi
+---
+
+##  Circuit Simulation (SimulIDE)
+
+Below is the architectural layout of the bidirectional link:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a64b21cf-cd18-4342-ab35-3efd759065ee" alt="SimulIDE Circuit Screenshot" width="90%">
+</p>
+
+---
+
+##  References
+
+*   **Ayala, Kenneth J.** - *The 8051 Microcontroller*
+*   **Nicolosi, Denys E. C.** - *Microcontrolador 8051 Detalhado*
+
+---
+
+##  How to Run
+1.  Open the `.simu` file in **SimulIDE**.
+2.  Load the compiled `.hex` or `.bin` (Assembly) into both 8051 MCUs.
+3.  Power on the simulation and use the switches to toggle communication modes.
