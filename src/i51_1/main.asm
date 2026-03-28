@@ -8,6 +8,8 @@ MAIN:
 	MOV	PCON,	#80h
 	MOV 	TMOD,	#00100000b
 	MOV	TH1,	#0FAh
+	MOV	A,	P0
+	MOV	R0,	A
 	SETB	TR1
 	JMP	$	
 	
