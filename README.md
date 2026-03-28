@@ -1,4 +1,4 @@
-# 🔄 8051 Bidirectional UART Communication
+# 8051 Bidirectional UART Communication
 
 ##  Overview
 
@@ -29,7 +29,7 @@ Key highlights:
 Below is the architectural layout of the bidirectional link:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a64b21cf-cd18-4342-ab35-3efd759065ee" alt="SimulIDE Circuit Screenshot" width="90%">
+  <img width="1323" height="776" alt="image" src="https://github.com/user-attachments/assets/c53ce387-de27-4fff-b0f5-cdd97c7c5cac" />
 </p>
 
 ---
