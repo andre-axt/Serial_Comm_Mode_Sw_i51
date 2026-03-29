@@ -1,4 +1,4 @@
-	ORG     0000h
+        ORG     0000h 
         SJMP    MAIN
 
 MAIN:
@@ -8,8 +8,15 @@ MAIN:
         MOV     PCON,   #80h
         MOV     TMOD,   #00100000b
         MOV     TH1,    #0FAh
-	MOV	A,	P0
-	MOV	R0,	A
+        MOV     A,      P0
+        MOV     R0,     A
+        MOV     R1,     P2
         SETB    TR1
-        JMP     $
-	
+
+LOOP:
+        MOV     A,      P2
+        XRL     A,      R1      
+        JNZ     SERIAL_TRM
+        MOV     R1,     A
+        JMP     LOOP
+
