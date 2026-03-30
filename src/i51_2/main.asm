@@ -1,5 +1,6 @@
         ORG     0000h 
         SJMP    MAIN
+	ORG	0030h
 
 MAIN:
         MOV     P2,     #0FFh
@@ -18,5 +19,5 @@ LOOP:
         XRL     A,      R1      
         JNZ     SERIAL_TRM
         MOV     R1,     A
-        JMP     LOOP
+        SJMP     LOOP
 

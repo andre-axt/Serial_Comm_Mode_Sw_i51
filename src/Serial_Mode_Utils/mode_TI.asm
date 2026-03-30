@@ -1,4 +1,4 @@
-	ORG	04FFh
+	ORG	0051h
 
 SERIAL_TI:
 	CLR	TI
@@ -6,15 +6,12 @@ SERIAL_TI:
 
 SERIAL_TRM:
 	JNB     SM0,    SERIAL_TRM_0_1
-        JB      SM0,    SERIAL_TRM_2_3
+        MOV     A,      P2
+        MOV     TB8,    P3.7
         RET	
 	
 SERIAL_TRM_0_1:
 	MOV	A,	P2
 	MOV	SBUF,	A
 	RET
-
-SERIAL_TRM_2_3:
-	MOV	A,	P2
-	MOV	TB8,	P3.7	
-	RET		
+		
