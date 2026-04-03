@@ -5,10 +5,12 @@ SERIAL_TI:
 	RETI
 
 SERIAL_TRM:
+	MOV     R1,     P2
 	JNB     SM0,    SERIAL_TRM_0_1
-        MOV     A,      P2
+        MOV	A,	P3.7
+	MOV     TB8,    A
+	MOV     A,      P2
 	MOV	SBUF,	A
-        MOV     TB8,    P3.7
         RET	
 	
 SERIAL_TRM_0_1:
