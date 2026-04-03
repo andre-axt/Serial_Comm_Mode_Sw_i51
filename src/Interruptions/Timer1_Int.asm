@@ -3,6 +3,4 @@ TIMER1_INT:
 	MOV	A,	P0
 	XRL	A,	R0
 	JNZ	MODE_H
-
-	MOV	R0,	A
 	RETI
