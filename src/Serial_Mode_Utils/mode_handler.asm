@@ -1,4 +1,4 @@
-	ORG	0100h
+	ORG	0090h
 
 MODE_H:
 	MOV	R0,	P0
