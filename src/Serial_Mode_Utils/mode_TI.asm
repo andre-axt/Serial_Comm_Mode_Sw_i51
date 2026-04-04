@@ -1,4 +1,4 @@
-	ORG	0051h
+	ORG	0059h
 
 SERIAL_TI:
 	CLR	TI
